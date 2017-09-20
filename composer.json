@@ -1,0 +1,29 @@
+{
+  "name": "bavix/content",
+  "description": "Content Library",
+  "keywords": [
+    "cookies",
+    "session",
+    "content"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "REZ1DENT3",
+      "email": "info@babichev.net"
+    }
+  ],
+  "require": {
+    "bavix/security": "~1.0",
+    "bavix/slice": "~1.0"
+  },
+  "require-dev": {
+    "nesbot/carbon": "^1.22"
+  },
+  "autoload": {
+    "psr-4": {
+      "Bavix\\": "src/"
+    }
+  }
+}
