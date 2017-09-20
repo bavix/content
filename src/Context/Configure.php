@@ -128,12 +128,12 @@ class Configure
      */
     public function __set(string $name, $value)
     {
-        if (!property_exists($this, $name))
+        if (property_exists($this, $name))
         {
-            throw new Invalid('Property not found!');
+            throw new Runtime('Property is readOnly!');
         }
 
-        throw new Runtime('Property is readOnly!');
+        throw new Invalid('Property not found!');
     }
 
     /**
