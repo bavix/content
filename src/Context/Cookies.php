@@ -19,7 +19,7 @@ class Cookies extends Container
     public function __construct(?string $password = null, Configure $configure = null)
     {
         parent::__construct($password);
-        $this->store = $_COOKIE;
+        $this->store = filter_input_array(INPUT_COOKIE, FILTER_UNSAFE_RAW) ?: [];
 
         $this->configure = $this->load($configure);
     }
