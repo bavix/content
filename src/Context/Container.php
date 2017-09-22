@@ -201,7 +201,7 @@ abstract class Container implements Content, \ArrayAccess, \Iterator
     {
         foreach ($this->getStore() as $name => $value)
         {
-            yield $this->get($name);
+            yield $name => $this->get($name);
         }
     }
 
