@@ -12,7 +12,7 @@ class Session extends Container
      */
     public function __construct(?string $password = null)
     {
-        session_id() OR session_start();
+        \PHP_SAPI === 'cli' OR \session_id() OR \session_start();
         parent::__construct($password);
         $this->store = &$_SESSION;
     }
