@@ -84,9 +84,9 @@ class Configure
             $this->expire = $this->expire->timestamp;
         }
 
-        if ($this->expire > time())
+        if ($this->expire > \time())
         {
-            $this->expire -= time();
+            $this->expire -= \time();
         }
 
         return $this;
@@ -128,7 +128,7 @@ class Configure
      */
     public function __set(string $name, $value)
     {
-        if (property_exists($this, $name))
+        if (\property_exists($this, $name))
         {
             throw new Runtime('Property is readOnly!');
         }
@@ -143,7 +143,7 @@ class Configure
      */
     public function __isset(string $name): bool
     {
-        return property_exists($this, $name);
+        return \property_exists($this, $name);
     }
 
     /**
@@ -153,19 +153,19 @@ class Configure
     {
         return [
             // expire
-            time() + $this->expire,
+            \time() + (int)$this->expire,
 
             // path
-            $this->path,
+            (string)$this->path,
 
             // domain
             $this->domain,
 
             // secure
-            $this->secure,
+            (bool)$this->secure,
 
             // httpOnly
-            $this->httpOnly,
+            (bool)$this->httpOnly,
         ];
     }
 
