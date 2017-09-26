@@ -29,7 +29,7 @@ class Configure
     protected $expire = 1209600;
 
     /**
-     * @var ?string
+     * @var null|string
      */
     protected $domain = null;
 
