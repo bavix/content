@@ -153,19 +153,19 @@ class Configure
     {
         return [
             // expire
-            \time() + (int)$this->expire,
+            \time() + (int) $this->expire,
 
             // path
-            (string)$this->path,
+            (string) $this->path,
 
             // domain
             $this->domain,
 
             // secure
-            (bool)$this->secure,
+            (bool) $this->secure,
 
             // httpOnly
-            (bool)$this->httpOnly,
+            (bool) $this->httpOnly,
         ];
     }
 
