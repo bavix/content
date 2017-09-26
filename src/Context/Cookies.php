@@ -45,7 +45,7 @@ class Cookies extends Container
      *
      * @return Configure
      */
-    protected function load(?Configure $configure): Configure
+    protected function load(?Configure $configure) : Configure
     {
         if (!$configure)
         {
