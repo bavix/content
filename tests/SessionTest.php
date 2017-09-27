@@ -5,6 +5,7 @@ namespace Tests;
 use Bavix\Context\Container;
 use Bavix\Context\Session;
 use Bavix\Helpers\Str;
+use Bavix\Tests\Bind;
 use Bavix\Tests\Unit;
 
 class SessionTest extends Unit
@@ -112,12 +113,7 @@ class SessionTest extends Unit
     public function testEmptyRows()
     {
         $this->container->set('hello', 'world');
-
-        $ref      = new \ReflectionClass($this->container);
-        $property = $ref->getProperty('rows');
-        $property->setAccessible(true);
-        $property->setValue($this->container, []);
-
+        Bind::setProperty($this->container, 'rows', []);
         $this->assertSame($this->container->get('hello'), 'world');
     }
 
