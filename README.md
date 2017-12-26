@@ -10,7 +10,7 @@
 [![License](https://poser.pugx.org/bavix/content/license)](https://packagist.org/packages/bavix/content)
 [![composer.lock](https://poser.pugx.org/bavix/content/composerlock)](https://packagist.org/packages/bavix/content)
 
-Conent - Cookies, Session manager's.
+Content - Cookies, Session manager's.
 
 * **Vendor**: bavix
 * **Package**: content
