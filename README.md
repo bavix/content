@@ -18,3 +18,8 @@ Content - Cookies, Session manager's.
 * **Version**: [![Latest Stable Version](https://poser.pugx.org/bavix/content/v/stable)](https://packagist.org/packages/bavix/content)
 * **PHP Version**: 7.1+ 
 * **[Composer](https://getcomposer.org/):** `composer require bavix/content`
+
+---
+Supported by
+
+[![Supported by JetBrains](https://cdn.rawgit.com/bavix/development-through/46475b4b/jetbrains.svg)](https://www.jetbrains.com/)
