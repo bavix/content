@@ -19,7 +19,7 @@
     "bavix/slice": "~1.0"
   },
   "require-dev": {
-    "nesbot/carbon": "^1.22",
+    "nesbot/carbon": "^1.22 || ^2.0",
     "bavix/tests": "^1.0"
   },
   "suggest": {
